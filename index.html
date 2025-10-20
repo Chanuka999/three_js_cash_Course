@@ -7,9 +7,36 @@
       body {
         margin: 0;
       }
+
+      h1,
+      h2 {
+        color: white;
+        text-align: center;
+        width: 100%;
+
+        font-family: "Inter";
+        font-weight: 100;
+
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      #title {
+        position: fixed;
+        font-size: 50px;
+        top: 10px;
+      }
+
+      #artist {
+        position: fixed;
+        font-size: 2em;
+        color: gray;
+        top: 65px;
+      }
     </style>
   </head>
   <body>
     <script type="module" src="/main.js"></script>
+    <h1 id="title"></h1>
+    <h2 id="artist"></h2>
   </body>
 </html>
