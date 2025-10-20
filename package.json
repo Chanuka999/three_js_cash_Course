@@ -1,12 +1,17 @@
 {
+  "homepage": "https://Chanuka999.github.io/three_js_cash_Course",
   "dependencies": {
     "three": "^0.180.0",
     "tween": "^0.9.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.1.10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
     "dev": "vite"
   }
 }
